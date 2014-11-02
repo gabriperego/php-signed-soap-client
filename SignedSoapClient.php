@@ -197,9 +197,10 @@ class SignedSoapClient extends SoapClient
      * @param string $location
      * @param string $action
      * @param int $version
+     * @param boolean $one_way
      * @return string
      */
-    function __doRequest($request, $location, $action, $version)
+    function __doRequest($request, $location, $action, $version, $one_way = NULL)
     {
         // проведём добавление нужных заголовков
         $dom = new DOMDocument('1.0', 'utf-8');

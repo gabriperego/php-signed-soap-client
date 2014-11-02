@@ -1,3 +1,8 @@
 {
-    "name": "gabriperego/php-signed-soap-client"
+    "name": "gabriperego/php-signed-soap-client",
+    "autoload": {
+        "psr-0": {
+            "GabriPerego": ""
+        }
+    }
 }
